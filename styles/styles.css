@@ -1,0 +1,28 @@
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    color: blue;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+header p {
+    color: aqua;
+}
+
+section #Denis p {
+    color: brown;
+
+}
+
+footer p {
+    color: yellow;
+}
+
+@media (max-width: 768px) { 
+    
+}
