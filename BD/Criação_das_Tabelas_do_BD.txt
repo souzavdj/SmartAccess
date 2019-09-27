@@ -1,0 +1,16 @@
+CREATE TABLE users (
+    registry varchar(10) NOT NULL,
+    name varchar(50) NOT NULL,
+    rfid varchar(20) NOT NULL,
+    register_date datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    PRIMARY KEY (registry)
+    );
+
+CREATE TABLE access_log(
+    id int(11) NOT NULL AUTO_INCREMENT,
+    registry_user varchar(10) DEFAULT NULL,
+    access_date datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    granted boolean NOT NULL,
+    PRIMARY KEY (id),
+    FOREIGN KEY (registry_user) REFERENCES users(registry)
+    );
